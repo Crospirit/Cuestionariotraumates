@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Cuestionario TES</title>
     <style>
     body {
@@ -10,10 +10,6 @@
         background-color: #f4f4f4;
         margin: 0;
         padding: 20px;
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Standard */
     }
     h1 {
         text-align: center;
@@ -24,14 +20,15 @@
     }
     .container {
         max-width: 800px;
+        width: 100%;
         margin: auto;
         background: #fff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word; /* Ajusta el texto largo */
-    word-break: break-word; /* Ajusta el texto largo */
-}
+        word-wrap: break-word; /* Ajusta el texto largo */
+        word-break: break-word; /* Ajusta el texto largo */
+    }
     .question {
         margin-bottom: 20px;
     }
@@ -39,6 +36,9 @@
         font-size: 18px;
         font-weight: bold;
         color: #6582BC; /* Azul cielo oscuro */
+        line-height: 1.5; /* Espaciado entre líneas */
+        overflow-wrap: break-word; /* Ajusta el texto largo */
+        word-break: break-word; /* Ajusta el texto largo */
     }
     .question label {
         display: block;
@@ -72,7 +72,17 @@
         font-size: 14px;
         color: #666;
     }
-</style>
+    /* Media query para dispositivos móviles */
+    @media (max-width: 600px) {
+        .question p {
+            font-size: 16px; /* Ajusta el tamaño de fuente para móviles */
+            line-height: 1.4; /* Ajusta el espaciado entre líneas para móviles */
+        }
+        .question label {
+            font-size: 14px; /* Ajusta el tamaño de fuente para móviles */
+        }
+    }
+    </style>
 </head>
 <body>
 
