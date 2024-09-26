@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Cuestionario TES</title>
-    <style>
+      <style>
     /* Reset CSS */
     * {
         margin: 0;
@@ -28,7 +28,7 @@
     }
 
     .container {
-        max-width: 1200px;
+        max-width: 1000px; /* Aumenta el ancho máximo del contenedor */
         width: 100%;
         margin: auto;
         background: #fff;
@@ -92,11 +92,17 @@
     /* Media query para dispositivos móviles */
     @media (max-width: 600px) {
         .question p {
-            font-size: 16px; /* Ajusta el tamaño de fuente para móviles */
-            line-height: 1.4; /* Ajusta el espaciado entre líneas para móviles */
+            font-size: 20px; /* Aumenta el tamaño de fuente para móviles */
+            line-height: 1.6; /* Ajusta el espaciado entre líneas para móviles */
         }
         .question label {
-            font-size: 14px; /* Ajusta el tamaño de fuente para móviles */
+            font-size: 18px; /* Aumenta el tamaño de fuente para móviles */
+        }
+        #submitBtn {
+            font-size: 20px; /* Aumenta el tamaño de fuente del botón para móviles */
+        }
+        .score {
+            font-size: 22px; /* Aumenta el tamaño de fuente del resultado para móviles */
         }
     }
     </style>
